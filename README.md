@@ -21,8 +21,6 @@ With [dein](https://github.com/Shougo/dein.vim)
 call dein#add('Olprog59/vim-pseudo-syntax-fr')
 ```
 
-Ou, collez les dossiers ```ftdetect``` et ```syntax``` dans votre dossier ```~/.vim/``` (ne sera pas mis à jour automatiquement)
-
 # Comment utiliser
 
 Suivez simplement les instructions d'installation ci-dessus et commencez à éditer tout fichier avec l'extension **.pseudo**
