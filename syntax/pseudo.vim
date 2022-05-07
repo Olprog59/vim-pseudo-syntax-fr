@@ -1,14 +1,14 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoStatement     Function Procedure Class function func procedure class error nextgroup=pseudoFunction skipwhite
-syn keyword pseudoPrint         print
+syn keyword pseudoStatement     Fonction Procedure Class fonction procedure class erreur nextgroup=pseudoFunction skipwhite
+syn keyword pseudoPrint         ecrire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
-syn keyword pseudoFunction      add sum length append remove pop size insert indexOf let
-syn keyword pseudoConditional   if else endif
-syn keyword pseudoRepeat        for to while foreach endfor endwhile endforeach return pass break each
-syn keyword pseudoOperator      and in is not or do then to
-syn keyword pseudoBuiltIn       String List Int Float Double Array Long string float int list double array arraylist, ArrayList, dictionary, Dictionary, dict
-syn keyword pseudoBoolean       true false True False
+syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
+syn keyword pseudoConditional   SI si Sinon sinon FinIf finif Alors alors
+syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque retourne continue rompre repeter Repeter Jusqu'a jusqu'a
+syn keyword pseudoOperator      ET et OU NON non
+syn keyword pseudoBuiltIn       Chaine chaine Tableau tableau Entier entier Reel reel Enregistrement enregistrement Booleen booleen
+syn keyword pseudoBoolean       Vrai Faux vrai faux
 
 syn region  pseudoString        start=+'+ skip=+\\\\\|\\'\|\\$+ excludenl end=+'+ end=+$+ keepend
 syn region  pseudoString        start=+"+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end=+$+ keepend
@@ -24,18 +24,17 @@ syn match   pseudoFloat         '\.\d\%([_0-9]*\d\)\=\%([eE][+-]\=\d\%([_0-9]*\d
 syn match   pseudoFloat         '\<\d\%([_0-9]*\d\)\=[eE][+-]\=\d\%([_0-9]*\d\)\=[jJ]\=\>' display
 syn match   pseudoFloat         '\<\d\%([_0-9]*\d\)\=\.\d\=\%([_0-9]*\d\)\=\%([eE][+-]\=\d\%([_0-9]*\d\)\=\)\=[jJ]\=' display
 
-hi def link pseudoNumber        Number
-hi def link pseudoFloat         Float
-hi def link pseudoString        String
-hi def link pseudoStatement     Statement
+hi def link pseudoNumber        Nombre
+hi def link pseudoFloat         Reel
+hi def link pseudoString        Chaine
+hi def link pseudoStatement     Déclaration
 hi def link pseudoPrint         Special 
-hi def link pseudoFunction      Function
-hi def link pseudoConditional   Conditional
-hi def link pseudoRepeat        Repeat
-hi def link pseudoOperator      Operator
-hi def link pseudoBuiltIn       Type 
-hi def link pseudoString        String
-hi def link pseudoBoolean       Boolean
-hi def link pseudoComment       Comment
+hi def link pseudoFunction      Fonction
+hi def link pseudoConditional   Condition
+hi def link pseudoRepeat        Repeter
+hi def link pseudoOperator      Operateur
+hi def link pseudoBuiltIn       Type
+hi def link pseudoBoolean       Booleen
+hi def link pseudoComment       Commentaire
 
 let b:current_syntax = 'pseudo'

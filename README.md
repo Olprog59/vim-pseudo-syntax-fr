@@ -1,35 +1,35 @@
 # pseudo-syntax
-Syntax highlighting for various styles of pseudocode for vim
+Coloration syntaxique pour différents styles de pseudocode pour vim
 
 # Installation
 With [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```
-Plug 'joelbeedle/pseudo-syntax'
+Plug 'Olprog59/vim-pseudo-syntax-fr'
 ```
 
 With [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 ```
-Plugin 'joelbeedle/pseudo-syntax'
+Plugin 'Olprog59/vim-pseudo-syntax-fr'
 ```
 
 With [dein](https://github.com/Shougo/dein.vim)
 
 ```
-call dein#add('joelbeedle/pseudo-syntax')
+call dein#add('Olprog59/vim-pseudo-syntax-fr')
 ```
 
-Or, stick ``` ftdetect ``` and ```syntax``` folders in your ```~/.vim/``` folder (will not update automatically)
+Ou, collez les dossiers ```ftdetect``` et ```syntax``` dans votre dossier ```~/.vim/``` (ne sera pas mis à jour automatiquement)
 
-# How to use
+# Comment utiliser
 
-Simply follow the install instructions above and start editing any file with the extension .pseudo
+Suivez simplement les instructions d'installation ci-dessus et commencez à éditer tout fichier avec l'extension **.pseudo**
 
-# Example
+# Exemple
 ![image](https://github.com/joelbeedle/pseudo-syntax/blob/main/files/screenshot.jpeg)
 
 # TODO
-- Fix float formatting
-- Add more syntax
-- Add more standard functions (such as .length(), .sum())
+- Corriger le formatage des flottants
+- Ajouter plus de syntaxe
+- Ajouter plus de fonctions standard (telles que .length(), .sum())
