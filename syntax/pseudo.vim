@@ -1,6 +1,7 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoStatement     Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables Fonction FinFonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur Enregistrement enregistrement FinEnregistrement finenregistrement nextgroup=pseudoFunction skipwhite
+syn keyword pseudoKeyword       Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables
+syn keyword pseudoStatement     Fonction FinFonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur Enregistrement enregistrement FinEnregistrement finenregistrement nextgroup=pseudoFunction skipwhite
 syn keyword pseudoPrint         ecrire
 syn keyword pseudoRead          lire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
