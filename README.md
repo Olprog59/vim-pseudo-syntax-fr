@@ -28,8 +28,3 @@ Suivez simplement les instructions d'installation ci-dessus et commencez à édi
 
 # Exemple
 ![image](https://github.com/joelbeedle/pseudo-syntax/blob/main/files/screenshot.jpeg)
-
-# TODO
-- Corriger le formatage des flottants
-- Ajouter plus de syntaxe
-- Ajouter plus de fonctions standard (telles que .length(), .sum())

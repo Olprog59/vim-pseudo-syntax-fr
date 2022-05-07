@@ -1,13 +1,15 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoStatement     Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables Fonction Finfonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur nextgroup=pseudoFunction skipwhite
+syn keyword pseudoStatement     Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables Fonction FinFonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur Enregistrement enregistrement FinEnregistrement finenregistrement nextgroup=pseudoFunction skipwhite
 syn keyword pseudoPrint         ecrire
+syn keyword pseudoRead          lire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
-syn keyword pseudoConditional   SI si Sinon sinon FinIf finif Alors alors
+syn keyword pseudoConditional   Si si Sinon sinon FinSi finsi Alors alors
 syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque retourne continue rompre repeter Repeter Jusqu'a jusqu'a FinRepeter finrepeter
 syn keyword pseudoOperator      ET et OU NON non
-syn keyword pseudoBuiltIn       Chaine chaine Tableau tableau Entier entier Reel reel Enregistrement enregistrement FinEnregistrement finenregistrement Booleen booleen
+syn match   pseudoOperator      ".*\<\-.*" display
+syn keyword pseudoBuiltIn       Chaine chaine Caractere caractere Tableau tableau Entier entier Reel reel Booleen booleen
 syn keyword pseudoBoolean       Vrai Faux vrai faux
 
 syn region  pseudoString        start=+'+ skip=+\\\\\|\\'\|\\$+ excludenl end=+'+ end=+$+ keepend
@@ -29,6 +31,7 @@ hi def link pseudoFloat         Float
 hi def link pseudoString        String
 hi def link pseudoStatement     Statement
 hi def link pseudoPrint         Special 
+hi def link pseudoRead          Special 
 hi def link pseudoFunction      Function
 hi def link pseudoConditional   Conditional
 hi def link pseudoRepeat        Repeat
