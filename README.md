@@ -1,5 +1,7 @@
 # pseudo-syntax
-Coloration syntaxique pour différents styles de pseudocode pour vim
+
+Coloration syntaxique pour différents styles de pseudocode pour vim.
+
 Fork : [joelbeedle/pseudo-syntax](https://github.com/joelbeedle/pseudo-syntax)
 
 # Installation
