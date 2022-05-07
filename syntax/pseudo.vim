@@ -1,6 +1,6 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoStatement     Fonction Procedure Class fonction procedure class erreur nextgroup=pseudoFunction skipwhite
+syn keyword pseudoStatement     Algo algo Algorithme algorithme Variable variable Variables variables Fonction Procedure Classe fonction procedure classe erreur nextgroup=pseudoFunction skipwhite
 syn keyword pseudoPrint         ecrire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
