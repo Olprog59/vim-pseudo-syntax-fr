@@ -10,6 +10,7 @@ syn keyword pseudoConditional   Si si Sinon sinon FinSi finsi Alors alors
 syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque Repeter repeter Jusqu'a jusqu'a Jusqua jusqua FinRepeter finrepeter retourne continue rompre
 syn keyword pseudoOperator      ET et OU ou NON non IN in
 syn match   pseudoKeyword       "<-" display
+syn match   pseudoKeyword       "&" display
 syn keyword pseudoBuiltIn       Chaine chaine Caractere caractere Tableau tableau Entier entier Reel reel Booleen booleen
 syn keyword pseudoBoolean       Vrai Faux vrai faux
 
