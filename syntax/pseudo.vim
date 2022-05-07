@@ -16,8 +16,8 @@ syn keyword pseudoBoolean       Vrai Faux vrai faux
 syn region  pseudoString        start=+'+ skip=+\\\\\|\\'\|\\$+ excludenl end=+'+ end=+$+ keepend
 syn region  pseudoString        start=+"+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end=+$+ keepend
 
-syn match   pseudoComment       '//.*$' display
-syn match   pseudoComment       '/\*\n.*\n\*/' display
+syn match   pseudoComment       '(//.*$)|()' display
+syn region  pseudoComment       start="/\*" end="\*/"
 
 syn match   pseudoNumber        '\<\d\>' display
 syn match   pseudoNumber        '\<[1-9][_0-9]*\d\>' display
