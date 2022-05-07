@@ -1,4 +1,4 @@
-# pseudo-syntax
+# vim-pseudo-syntax-fr
 
 Coloration syntaxique pour différents styles de pseudocode pour vim.
 
