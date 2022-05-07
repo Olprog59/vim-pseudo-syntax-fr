@@ -7,12 +7,9 @@ function! PseudoIndent()
 
   if previous =~? "fin.*" || previous =~? "jusqu.*"
     return indent(previousNum)
-  elseif line =~? "fin.*" || line =~? "jusqu.*"
-    return indent(previousNum) - &tabstop
-  elseif previous =~? "algo" || previous =~?"algorithme" || previous =~?"debut" || previous =~?"variable" || previous =~?"variables" || previous =~?"fonction" || previous =~?"procedure" || previous =~?"classe" || previous =~?"enregistrement" || previous =~?"si" || previous =~?"sinon" || previous =~?"pour" || previous =~?"tantque" || previous =~?"repeter"
+  elseif previous =~? "algo" || previous =~?"algorithme" || previous =~?"debut" || previous =~?"fonction" || previous =~?"procedure" || previous =~?"classe" || previous =~?"enregistrement" || previous =~?"si" || previous =~?"sinon" || previous =~?"pour" || previous =~?"tantque" || previous =~?"repeter"
     return indent(previousNum) + &tabstop
   else
     return indent(previousNum)
   endif
-
 endfunction
