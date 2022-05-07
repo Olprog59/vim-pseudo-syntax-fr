@@ -7,7 +7,8 @@ syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
 syn keyword pseudoConditional   Si si Sinon sinon FinSi finsi Alors alors
 syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque retourne continue rompre repeter Repeter Jusqu'a jusqu'a FinRepeter finrepeter
-syn keyword pseudoOperator      ET et OU ou <- NON non
+syn keyword pseudoOperator      ET et OU ou NON non
+syn keyword pseudoKeyword       <-
 syn keyword pseudoBuiltIn       Chaine chaine Caractere caractere Tableau tableau Entier entier Reel reel Booleen booleen
 syn keyword pseudoBoolean       Vrai Faux vrai faux
 
@@ -38,5 +39,6 @@ hi def link pseudoOperator      Operator
 hi def link pseudoBuiltIn       Type
 hi def link pseudoBoolean       Boolean
 hi def link pseudoComment       Comment
+hi def link pseudoKeyword       Keyword
 
 let b:current_syntax = 'pseudo'
