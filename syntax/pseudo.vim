@@ -1,13 +1,13 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoStatement     Algo algo Algorithme algorithme Variable variable Variables variables Fonction Procedure Classe fonction procedure classe erreur nextgroup=pseudoFunction skipwhite
+syn keyword pseudoStatement     Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables Fonction Finfonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur nextgroup=pseudoFunction skipwhite
 syn keyword pseudoPrint         ecrire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
 syn keyword pseudoConditional   SI si Sinon sinon FinIf finif Alors alors
-syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque retourne continue rompre repeter Repeter Jusqu'a jusqu'a
+syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque retourne continue rompre repeter Repeter Jusqu'a jusqu'a FinRepeter finrepeter
 syn keyword pseudoOperator      ET et OU NON non
-syn keyword pseudoBuiltIn       Chaine chaine Tableau tableau Entier entier Reel reel Enregistrement enregistrement Booleen booleen
+syn keyword pseudoBuiltIn       Chaine chaine Tableau tableau Entier entier Reel reel Enregistrement enregistrement FinEnregistrement finenregistrement Booleen booleen
 syn keyword pseudoBoolean       Vrai Faux vrai faux
 
 syn region  pseudoString        start=+'+ skip=+\\\\\|\\'\|\\$+ excludenl end=+'+ end=+$+ keepend
@@ -24,17 +24,17 @@ syn match   pseudoFloat         '\.\d\%([_0-9]*\d\)\=\%([eE][+-]\=\d\%([_0-9]*\d
 syn match   pseudoFloat         '\<\d\%([_0-9]*\d\)\=[eE][+-]\=\d\%([_0-9]*\d\)\=[jJ]\=\>' display
 syn match   pseudoFloat         '\<\d\%([_0-9]*\d\)\=\.\d\=\%([_0-9]*\d\)\=\%([eE][+-]\=\d\%([_0-9]*\d\)\=\)\=[jJ]\=' display
 
-hi def link pseudoNumber        Nombre
-hi def link pseudoFloat         Reel
-hi def link pseudoString        Chaine
-hi def link pseudoStatement     Déclaration
+hi def link pseudoNumber        Number
+hi def link pseudoFloat         Float
+hi def link pseudoString        String
+hi def link pseudoStatement     Statement
 hi def link pseudoPrint         Special 
-hi def link pseudoFunction      Fonction
-hi def link pseudoConditional   Condition
-hi def link pseudoRepeat        Repeter
-hi def link pseudoOperator      Operateur
+hi def link pseudoFunction      Function
+hi def link pseudoConditional   Conditional
+hi def link pseudoRepeat        Repeat
+hi def link pseudoOperator      Operator
 hi def link pseudoBuiltIn       Type
-hi def link pseudoBoolean       Booleen
-hi def link pseudoComment       Commentaire
+hi def link pseudoBoolean       Boolean
+hi def link pseudoComment       Comment
 
 let b:current_syntax = 'pseudo'
