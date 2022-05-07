@@ -1,6 +1,6 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoKeyword       Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables
+syn keyword pseudoKeyword       Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables par adresse valeur
 syn keyword pseudoStatement     Fonction FinFonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur Enregistrement enregistrement FinEnregistrement finenregistrement nextgroup=pseudoFunction skipwhite
 syn keyword pseudoPrint         ecrire
 syn keyword pseudoRead          lire
