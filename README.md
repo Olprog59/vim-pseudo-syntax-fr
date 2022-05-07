@@ -1,5 +1,6 @@
 # pseudo-syntax
 Coloration syntaxique pour différents styles de pseudocode pour vim
+Fork : [joelbeedle/pseudo-syntax](https://github.com/joelbeedle/pseudo-syntax)
 
 # Installation
 With [vim-plug](https://github.com/junegunn/vim-plug)
@@ -28,3 +29,57 @@ Suivez simplement les instructions d'installation ci-dessus et commencez à édi
 
 # Exemple
 ![image](https://github.com/joelbeedle/pseudo-syntax/blob/main/files/screenshot.jpeg)
+
+# Mot clef
+```
+Algo | algo 
+Algorithme | algorithme
+Debut | debut
+Fin | fin
+Variable | variable | Variables | variables
+Fonction | fonction
+FinFonction | finfonction
+Procedure | procedure 
+FinProcedure | finprocedure
+Classe | classe
+erreur
+Enregistrement | enregistrement
+FinEnregistrement | finenregistrement
+
+ecrire
+lire
+
+Chaine | chaine
+Caractere | caractere
+Tableau | tableau
+Entier | entier
+Reel | reel
+Booleen | booleen
+
+ajout / somme / longueur / ajouter / supprimer / insertion
+Si | si
+Sinon | sinon
+FinSi | finsi
+Alors | alors
+
+Pour | pour
+allant
+de
+TantQue | tantque
+FinPour | finpour
+FinTantQue | fintantque
+retourne
+continue
+rompre
+Repeter | repeter
+Jusqu'a | jusqu'a | Jusqua | jusqua
+FinRepeter | finrepeter
+
+ET | et
+OU | ou
+NON | non
+IN | in
+
+Vrai | vrai
+Faux | faux
+```

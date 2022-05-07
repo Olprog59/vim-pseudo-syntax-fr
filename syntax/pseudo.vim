@@ -7,8 +7,8 @@ syn keyword pseudoRead          lire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
 syn keyword pseudoConditional   Si si Sinon sinon FinSi finsi Alors alors
-syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque retourne continue rompre repeter Repeter Jusqu'a jusqu'a FinRepeter finrepeter
-syn keyword pseudoOperator      ET et OU ou NON non
+syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque Repeter repeter Jusqu'a jusqu'a Jusqua jusqua FinRepeter finrepeter retourne continue rompre
+syn keyword pseudoOperator      ET et OU ou NON non IN in
 syn match   pseudoKeyword       "<-" display
 syn keyword pseudoBuiltIn       Chaine chaine Caractere caractere Tableau tableau Entier entier Reel reel Booleen booleen
 syn keyword pseudoBoolean       Vrai Faux vrai faux
@@ -17,6 +17,7 @@ syn region  pseudoString        start=+'+ skip=+\\\\\|\\'\|\\$+ excludenl end=+'
 syn region  pseudoString        start=+"+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end=+$+ keepend
 
 syn match   pseudoComment       '//.*$' display
+syn match   pseudoComment       '^/\*\n.*\n\*/$' display
 
 syn match   pseudoNumber        '\<\d\>' display
 syn match   pseudoNumber        '\<[1-9][_0-9]*\d\>' display
