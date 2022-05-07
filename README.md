@@ -82,4 +82,11 @@ IN | in
 
 Vrai | vrai
 Faux | faux
+
+// commentaire sur une ligne
+/*
+    Commentaire sur
+    plusieurs 
+    lignes
+*/
 ```
