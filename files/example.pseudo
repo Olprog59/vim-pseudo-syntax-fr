@@ -1,23 +1,53 @@
-// Hello, World
-Function sumNumbers(numbers: List): Int
-    result = numbers[0] : Int
-    for i := 1 to numbers.size() do
-        result = result + numbers[i]
-    endforeach
+Algo Demo
 
-    return result
+    Variables   int : entier
+                float : reel
+                bool : booleen
+                tab : tableau[10] de chaine
 
-Function sumNumbersAlternate(numbers: array) : int
-    return sum(numbers)
+    // commentaire
+    /*
+        Commentaire
+        sur plusieurs
+        lignes 
+    */
+    Enregistrement Personne
+      nom: chaine
+      prenom: chaine
+      age: entier
+    FinEnregistrement
+    
+    Fonction sam() : entier
+      retourne int * 3
+    FinFonction
 
-Procedure print_board(board: BoardType): 
-    foreach row in board do
-        foreach column in board do
-            print(board[row][column])
-        endforeach
-    endforeach
+    Procedure proc(note : reel par adresse)
+      ecrire("Entrez la note :")
+      lire(note)
+    FinProcedure
+    
+    Debut
 
-Procedure while_loop():
-    while true:
-        print('Hello, World!')
-    endwhile
+        Si int > 10 et float < 8 ou non bool alors
+            ecrire("hello")
+        Sinon
+            ecrire("World")
+        FinSi
+
+        Variable p1 : Personne
+        p1.nom <- "Michaux"
+        p1.prenom <- "Samuel"
+        p1.age <- 40
+
+        Variable p2 : Personne
+        p2 <- {
+          nom: "Michaux",
+          samuel: "Samuel",
+          age: 40
+        }
+
+        Pour i allant de 0 à longueur(tab) - 1
+          ecrire("Entrez la note " & i + 1)
+          lire(tab[i])
+        FinPour
+    Fin

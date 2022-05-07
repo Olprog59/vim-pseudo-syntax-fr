@@ -28,7 +28,7 @@ Ou, collez les dossiers ```ftdetect``` et ```syntax``` dans votre dossier ```~/.
 Suivez simplement les instructions d'installation ci-dessus et commencez à éditer tout fichier avec l'extension **.pseudo**
 
 # Exemple
-![image](https://github.com/joelbeedle/pseudo-syntax/blob/main/files/screenshot.jpeg)
+![image](https://github.com/Olprog59/vim-pseudo-syntax-fr/blob/main/files/screenshot.png)
 
 # Mot clef
 ```
