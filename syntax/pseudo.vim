@@ -1,13 +1,13 @@
 if exists('b:current_syntax') | finish | endif
 
-syn keyword pseudoKeyword       Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables par adresse valeur
+syn keyword pseudoKeyword       Algo algo Algorithme algorithme Debut debut Fin fin Variable variable Variables variables adresse valeur
 syn keyword pseudoStatement     Fonction FinFonction finfonction Procedure FinProcedure finprocedure Classe fonction procedure classe erreur Enregistrement enregistrement FinEnregistrement finenregistrement nextgroup=pseudoFunction skipwhite
 syn keyword pseudoPrint         ecrire
 syn keyword pseudoRead          lire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      ajout somme longueur ajouter supprimer insertion
 syn keyword pseudoConditional   Si si Sinon sinon FinSi finsi Alors alors
-syn keyword pseudoRepeat        Pour pour allant de TantQue tantque FinPour finpour FinTantQue fintantque Repeter repeter Jusqu'a jusqu'a Jusqua jusqua FinRepeter finrepeter retourne continue rompre
+syn keyword pseudoRepeat        Pour pour allant de par pas TantQue tantque FinPour finpour FinTantQue fintantque Repeter repeter Jusqu'a jusqu'a Jusqua jusqua FinRepeter finrepeter retourne continue rompre
 syn keyword pseudoOperator      ET et OU ou NON non IN in
 syn match   pseudoKeyword       "<-" display
 syn match   pseudoKeyword       "&" display
