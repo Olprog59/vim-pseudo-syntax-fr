@@ -11,7 +11,7 @@ syn keyword pseudoRepeat        Pour pour allant de par pas TantQue tantque FinP
 syn keyword pseudoOperator      ET et OU ou NON non IN in
 syn match   pseudoKeyword       "<-" display
 syn match   pseudoKeyword       "&" display
-syn keyword pseudoBuiltIn       Chaine chaine Caractere caractere Tableau tableau Entier entier Reel reel Booleen booleen
+syn keyword pseudoBuiltIn       Chaine chaine Caractere caractere Tableau tableau Entier entier Reel reel Booleen booleen Chaines chaines Caracteres caracteres Tableau tableau Entiers entiers Reels reels Booleens booleens
 syn keyword pseudoBoolean       Vrai Faux vrai faux
 
 syn region  pseudoString        start=+'+ skip=+\\\\\|\\'\|\\$+ excludenl end=+'+ end=+$+ keepend
@@ -33,8 +33,8 @@ hi def link pseudoNumber        Number
 hi def link pseudoFloat         Float
 hi def link pseudoString        String
 hi def link pseudoStatement     Statement
-hi def link pseudoPrint         Special 
-hi def link pseudoRead          Special 
+hi def link pseudoPrint         Special
+hi def link pseudoRead          Special
 hi def link pseudoFunction      Function
 hi def link pseudoConditional   Conditional
 hi def link pseudoRepeat        Repeat
