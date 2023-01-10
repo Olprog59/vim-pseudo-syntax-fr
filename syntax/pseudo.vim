@@ -7,7 +7,7 @@ syn keyword pseudoRead          lire
 syn match   pseudoFunction      "[a-zA-z][a-zA-Z0-9_]*" display contained
 syn keyword pseudoFunction      longueur ajouter supprimer insertion
 syn keyword pseudoConditional   Si si Sinon sinon FinSi finsi Alors alors
-syn keyword pseudoRepeat        Pour pour allant de par pas TantQue tantque FinPour finpour FinTantQue fintantque Repeter repeter Jusqu'a jusqu'a Jusqua jusqua FinRepeter finrepeter Retourne retourne Continue continue Rompre rompre
+syn keyword pseudoRepeat        Pour pour allant de par pas TantQue tantque FinPour finpour FinTantQue fintantque Repeter repeter Jusqu'a jusqu'a Jusqua jusqua FinRepeter finrepeter Retourne retourne Continue continue Rompre rompre à
 syn keyword pseudoOperator      ET et OU ou NON non IN in
 syn match   pseudoKeyword       "<-" display
 syn match   pseudoKeyword       "&" display
